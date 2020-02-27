@@ -11,6 +11,8 @@ Markdown is a lightweight and easy-to-use syntax for styling your writing. It in
 ```markdown
 Syntax highlighted code block
 
+<iframe src="https://kyso.io/symbionts/datapy/embed#code=both" width="100%" height="400px" frameBorder="0"></iframe>
+
 # Header 1
 ## Header 2
 ### Header 3
