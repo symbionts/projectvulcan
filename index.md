@@ -1,1 +1,1 @@
-<iframe src="https://kyso.io/symbionts/datapy/embed#code=both" width="100%" height="400px" frameBorder="0"></iframe>
+<iframe id="iframe" sandbox="allow-scripts" src="/user/symbionts-notebooks-eigzym3c/files/Project_BITSase_publish.html"></iframe>
