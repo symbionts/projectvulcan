@@ -1,3 +1,4 @@
+<html>
 <style type = "text/css">
   body {
   margin: 0;
@@ -10,4 +11,5 @@
 <style>
 
 
-<iframe src="/symbionts.html" frameborder="0" allowfullscreen></iframe>
+<iframe src="https://symbionts.github.io/symbionts.html" frameborder="0" allowfullscreen></iframe>
+</html>
