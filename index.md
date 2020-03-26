@@ -45,7 +45,6 @@ MathJax.Hub.Config({
     }
 });
 </script>
-    <!-- End of mathjax configuration -->
 
 <style>
         .cell.nbinteract-left {
