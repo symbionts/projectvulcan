@@ -25,8 +25,7 @@ div#notebook {
 }
 </style>
 
-<!-- Loading mathjax macro -->
-<!-- Load mathjax -->
+
 <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/latest.js?config=TeX-AMS_HTML"></script>
 <!-- MathJax configuration -->
 <script type="text/x-mathjax-config">
@@ -80,7 +79,7 @@ MathJax.Hub.Config({
         .jp-OutputPrompt {
             display: none;
         }
-    </style></head>
+    </style>
   <div tabindex="-1" id="notebook" class="border-box-sizing">
     <div class="container">
       
