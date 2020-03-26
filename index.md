@@ -19,6 +19,32 @@ linebreaks: { automatic: true }
 });
 </script>
 
+<style type="text/css">
+/* Overrides of notebook CSS for static HTML export */
+body {
+overflow: visible;
+padding: 8px;
+}
+
+div#notebook {
+overflow: visible;
+border-top: none;
+}@media print {
+div.cell {
+display: block;
+page-break-inside: avoid;
+}
+div.output_wrapper {
+display: block;
+page-break-inside: avoid;
+}
+div.output {
+display: block;
+page-break-inside: avoid;
+}
+}
+</style>
+
 <style>
 .cell.nbinteract-left {
 width: 50%;
@@ -181,21 +207,6 @@ Loading widgets...
 </div>
 
 
-<div class="
-cell border-box-sizing code_cell rendered">
-<div class="input">
-
-<div class="inner_cell">
-<div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span> 
-</pre></div>
-
-
-</div>
-</div>
-</div>
-
-</div>
 
 
 
