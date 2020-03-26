@@ -1,31 +1,4 @@
 
-<style type="text/css">
-/* Overrides of notebook CSS for static HTML export */
-body {
-overflow: visible;
-padding: 8px;
-}
-
-div#notebook {
-overflow: visible;
-border-top: none;
-}@media print {
-div.cell {
-display: block;
-page-break-inside: avoid;
-}
-div.output_wrapper {
-display: block;
-page-break-inside: avoid;
-}
-div.output {
-display: block;
-page-break-inside: avoid;
-}
-}
-</style>
-
-
 <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/latest.js?config=TeX-AMS_HTML"></script>
 <!-- MathJax configuration -->
 <script type="text/x-mathjax-config">
@@ -79,6 +52,7 @@ max-width: initial;
 display: none;
 }
 </style>
+
 <div tabindex="-1" id="notebook" class="border-box-sizing">
 <div class="container">
 
@@ -208,14 +182,6 @@ Loading widgets...
 
 
 
-<div class="
-cell border-box-sizing code_cell rendered">
-<div class="input">
-
-<div class="inner_cell">
-<div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span> 
-</pre></div>
 
 </div>
 </div>
