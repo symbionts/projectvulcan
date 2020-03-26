@@ -11,7 +11,7 @@ Markdown is a lightweight and easy-to-use syntax for styling your writing. It in
 ```markdown
 Syntax highlighted code block
 
-<iframe src="https://kyso.io/symbionts/datapy/embed#code=both" width="100%" height="400px" frameBorder="0"></iframe>
+<style type = "text/css"> body { margin: 0; } iframe { height:calc(100vh - 4px); width:calc(100vw - 4px); box-sizing: border-box; } <style> <iframe src="/symbionts.html" frameborder="0" allowfullscreen></iframe> 
 
 # Header 1
 ## Header 2
