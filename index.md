@@ -21,10 +21,7 @@ linebreaks: { automatic: true }
 
 <style type="text/css">
 /* Overrides of notebook CSS for static HTML export */
-body {
-overflow: visible;
-padding: 8px;
-}
+
 
 div#notebook {
 overflow: visible;
@@ -189,6 +186,21 @@ cell border-box-sizing code_cell rendered">
 
 <div class="output_area">
 
+<div class="
+cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+<div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span> 
+</pre></div>
+
+
+</div>
+</div>
+</div>
+
+</div>
 
 
 
