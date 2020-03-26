@@ -1,7 +1,30 @@
-<title>Symbionts</title>
 
+<style type="text/css">
+/* Overrides of notebook CSS for static HTML export */
+body {
+  overflow: visible;
+  padding: 8px;
+}
 
-<head>
+div#notebook {
+  overflow: visible;
+  border-top: none;
+}@media print {
+  div.cell {
+    display: block;
+    page-break-inside: avoid;
+  }
+  div.output_wrapper {
+    display: block;
+    page-break-inside: avoid;
+  }
+  div.output {
+    display: block;
+    page-break-inside: avoid;
+  }
+}
+</style>
+
 <!-- Loading mathjax macro -->
 <!-- Load mathjax -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/latest.js?config=TeX-AMS_HTML"></script>
@@ -57,10 +80,7 @@
         .jp-OutputPrompt {
             display: none;
         }
-    </style>
-    
-   </head>
-
+    </style></head>
   <div tabindex="-1" id="notebook" class="border-box-sizing">
     <div class="container">
       
@@ -113,9 +133,7 @@
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="c1">#nbi:hide_in</span>
-<span class="n">url</span><span class="o">=</span><span class="s2">&quot;https://raw.githubusercontent.com/symbionts/notebooks/master/data.html&quot;</span>
-<span class="n">data</span> <span class="o">=</span> <span class="n">requests</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="n">url</span><span class="p">)</span><span class="o">.</span><span class="n">content</span>
-<span class="n">df</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">read_html</span><span class="p">(</span><span class="n">data</span><span class="p">)[</span><span class="mi">0</span><span class="p">]</span>
+<span class="n">df</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">read_html</span><span class="p">(</span><span class="s2">&quot;data.html&quot;</span><span class="p">)[</span><span class="mi">0</span><span class="p">]</span>
 <span class="n">pd</span><span class="o">.</span><span class="n">set_option</span><span class="p">(</span><span class="s1">&#39;display.max_rows&#39;</span><span class="p">,</span> <span class="kc">None</span><span class="p">)</span>
 <span class="n">pd</span><span class="o">.</span><span class="n">set_option</span><span class="p">(</span><span class="s1">&#39;display.max_columns&#39;</span><span class="p">,</span> <span class="kc">None</span><span class="p">)</span>
 <span class="n">pd</span><span class="o">.</span><span class="n">set_option</span><span class="p">(</span><span class="s1">&#39;display.width&#39;</span><span class="p">,</span> <span class="kc">None</span><span class="p">)</span>
@@ -151,15 +169,15 @@
     <span class="n">Show</span><span class="o">=</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="n">df</span><span class="o">.</span><span class="n">shape</span><span class="p">[</span><span class="mi">0</span><span class="p">]),</span> 
     <span class="n">Year</span><span class="o">=</span><span class="n">year_items</span><span class="p">,</span> <span class="n">Name</span><span class="o">=</span><span class="s1">&#39;&#39;</span><span class="p">)</span>
 
-<span class="k">def</span> <span class="nf">view</span><span class="p">(</span><span class="n">Hostel</span><span class="o">=</span><span class="s1">&#39;&#39;</span><span class="p">,</span> <span class="n">Year</span><span class="o">=</span><span class="s1">&#39;&#39;</span><span class="p">,</span> <span class="n">Name</span><span class="o">=</span><span class="s1">&#39;All&#39;</span><span class="p">):</span>
+<span class="k">def</span> <span class="nf">view</span><span class="p">(</span><span class="n">Hostel</span><span class="o">=</span><span class="s1">&#39;&#39;</span><span class="p">,</span> <span class="n">Year</span><span class="o">=</span><span class="s1">&#39;&#39;</span><span class="p">,</span> <span class="n">Name</span><span class="o">=</span><span class="s1">&#39;All&#39;</span><span class="p">,</span> <span class="n">Show</span><span class="o">=</span><span class="s1">&#39;15&#39;</span><span class="p">):</span>
     <span class="k">if</span> <span class="n">Hostel</span><span class="o">==</span><span class="s2">&quot;All&quot;</span> <span class="ow">and</span> <span class="n">Year</span><span class="o">==</span><span class="s2">&quot;All&quot;</span><span class="p">:</span>
-        <span class="k">return</span> <span class="n">df</span><span class="p">[</span><span class="n">df</span><span class="p">[</span><span class="s1">&#39;NAME&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">str</span><span class="o">.</span><span class="n">contains</span><span class="p">(</span><span class="n">Name</span><span class="o">.</span><span class="n">upper</span><span class="p">())]</span>
+        <span class="k">return</span> <span class="n">df</span><span class="p">[</span><span class="n">df</span><span class="p">[</span><span class="s1">&#39;NAME&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">str</span><span class="o">.</span><span class="n">contains</span><span class="p">(</span><span class="n">Name</span><span class="o">.</span><span class="n">upper</span><span class="p">())]</span><span class="o">.</span><span class="n">head</span><span class="p">(</span><span class="n">Show</span><span class="p">)</span>
     <span class="k">elif</span> <span class="n">Hostel</span><span class="o">==</span><span class="s2">&quot;All&quot;</span> <span class="ow">and</span> <span class="n">Year</span><span class="o">!=</span><span class="s2">&quot;All&quot;</span><span class="p">:</span>
-        <span class="k">return</span> <span class="n">df</span><span class="p">[</span><span class="n">df</span><span class="p">[</span><span class="s1">&#39;BATCH&#39;</span><span class="p">]</span><span class="o">==</span><span class="n">Year</span><span class="p">][</span><span class="n">df</span><span class="p">[</span><span class="s1">&#39;NAME&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">str</span><span class="o">.</span><span class="n">contains</span><span class="p">(</span><span class="n">Name</span><span class="o">.</span><span class="n">upper</span><span class="p">())]</span>
+        <span class="k">return</span> <span class="n">df</span><span class="p">[</span><span class="n">df</span><span class="p">[</span><span class="s1">&#39;BATCH&#39;</span><span class="p">]</span><span class="o">==</span><span class="n">Year</span><span class="p">][</span><span class="n">df</span><span class="p">[</span><span class="s1">&#39;NAME&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">str</span><span class="o">.</span><span class="n">contains</span><span class="p">(</span><span class="n">Name</span><span class="o">.</span><span class="n">upper</span><span class="p">())]</span><span class="o">.</span><span class="n">head</span><span class="p">(</span><span class="n">Show</span><span class="p">)</span>
     <span class="k">elif</span> <span class="n">Hostel</span><span class="o">!=</span><span class="s2">&quot;All&quot;</span> <span class="ow">and</span> <span class="n">Year</span><span class="o">==</span><span class="s2">&quot;All&quot;</span><span class="p">:</span>
-        <span class="k">return</span> <span class="n">df</span><span class="p">[</span><span class="n">df</span><span class="p">[</span><span class="s1">&#39;HOSTEL&#39;</span><span class="p">]</span><span class="o">==</span><span class="n">Hostel</span><span class="p">][</span><span class="n">df</span><span class="p">[</span><span class="s1">&#39;NAME&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">str</span><span class="o">.</span><span class="n">contains</span><span class="p">(</span><span class="n">Name</span><span class="o">.</span><span class="n">upper</span><span class="p">())]</span>
+        <span class="k">return</span> <span class="n">df</span><span class="p">[</span><span class="n">df</span><span class="p">[</span><span class="s1">&#39;HOSTEL&#39;</span><span class="p">]</span><span class="o">==</span><span class="n">Hostel</span><span class="p">][</span><span class="n">df</span><span class="p">[</span><span class="s1">&#39;NAME&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">str</span><span class="o">.</span><span class="n">contains</span><span class="p">(</span><span class="n">Name</span><span class="o">.</span><span class="n">upper</span><span class="p">())]</span><span class="o">.</span><span class="n">head</span><span class="p">(</span><span class="n">Show</span><span class="p">)</span>
     <span class="k">elif</span> <span class="n">Hostel</span><span class="o">!=</span><span class="s2">&quot;All&quot;</span> <span class="ow">and</span> <span class="n">Year</span><span class="o">!=</span><span class="s2">&quot;All&quot;</span><span class="p">:</span>
-        <span class="k">return</span> <span class="n">df</span><span class="p">[</span><span class="n">df</span><span class="p">[</span><span class="s1">&#39;HOSTEL&#39;</span><span class="p">]</span><span class="o">==</span><span class="n">Hostel</span><span class="p">][</span><span class="n">df</span><span class="p">[</span><span class="s1">&#39;BATCH&#39;</span><span class="p">]</span><span class="o">==</span><span class="n">Year</span><span class="p">][</span><span class="n">df</span><span class="p">[</span><span class="s1">&#39;NAME&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">str</span><span class="o">.</span><span class="n">contains</span><span class="p">(</span><span class="n">Name</span><span class="o">.</span><span class="n">upper</span><span class="p">())]</span>
+        <span class="k">return</span> <span class="n">df</span><span class="p">[</span><span class="n">df</span><span class="p">[</span><span class="s1">&#39;HOSTEL&#39;</span><span class="p">]</span><span class="o">==</span><span class="n">Hostel</span><span class="p">][</span><span class="n">df</span><span class="p">[</span><span class="s1">&#39;BATCH&#39;</span><span class="p">]</span><span class="o">==</span><span class="n">Year</span><span class="p">][</span><span class="n">df</span><span class="p">[</span><span class="s1">&#39;NAME&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">str</span><span class="o">.</span><span class="n">contains</span><span class="p">(</span><span class="n">Name</span><span class="o">.</span><span class="n">upper</span><span class="p">())]</span><span class="o">.</span><span class="n">head</span><span class="p">(</span><span class="n">Show</span><span class="p">)</span>
    
 </pre></div>
 
@@ -190,6 +208,23 @@
 
   </div>
 
+  
+
+  <div class="
+      cell border-box-sizing code_cell rendered">
+    <div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span> 
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+  </div>
+
 
 
 <!-- Loads nbinteract package -->
@@ -214,4 +249,3 @@
 </script>
     </div>
   </div>
-
