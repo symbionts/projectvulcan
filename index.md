@@ -220,7 +220,7 @@ MathJax.Hub.Config({
 </div>
 
   </div> -->
-</center>
+
 
 <!-- Loads nbinteract package -->
 <script src="https://unpkg.com/nbinteract-core" async></script>
@@ -244,4 +244,4 @@ MathJax.Hub.Config({
 </script>
     </div>
   </div>
-
+</center>
