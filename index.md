@@ -249,10 +249,10 @@ MathJax.Hub.Config({
     </div>
   </div>
 </center>
-<!--<form
+<!--
+ <form
   action="https://formspree.io/xjvodoja"
-  method="POST"
->
+  method="POST">
   <label>
     Your email:
     <input type="text" name="_replyto">
@@ -261,8 +261,6 @@ MathJax.Hub.Config({
     Your message:
     <textarea name="message"></textarea>
   </label>
-
-  <!-- your other form fields go here -->
-
   <button type="submit">Send</button>
-</form>-->
+</form> 
+-->
