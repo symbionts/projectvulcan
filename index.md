@@ -1,5 +1,7 @@
-# Search by 
+## Welcome to the Symbionts alpha website  
 This is the launch site. Lot of work to start, so suggestions welcome. Right now a table of all Symbionts members has been extracted from SWD. The plan is to add fields like Post BITS journey of graduates, reviews of sponsorship programs, thesis programs, professors, etc.
+
+Click on show widget. Please be patient when loading it for the first time. 
 
 <style type="text/css">
 /* Overrides of notebook CSS for static HTML export */
