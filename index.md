@@ -1,27 +1,10 @@
 
-<script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/latest.js?config=TeX-AMS_HTML"></script>
-<!-- MathJax configuration -->
-<script type="text/x-mathjax-config">
-MathJax.Hub.Config({
-tex2jax: {
-inlineMath: [ ['$','$'], ["\\(","\\)"] ],
-displayMath: [ ['$$','$$'], ["\\[","\\]"] ],
-processEscapes: true,
-processEnvironments: true
-},
-// Center justify equations in code and markdown cells. Elsewhere
-// we use CSS to left justify single line equations in code cells.
-displayAlign: 'center',
-"HTML-CSS": {
-styles: {'.MathJax_Display': {"margin": 0}},
-linebreaks: { automatic: true }
-}
-});
-</script>
-
 <style type="text/css">
 /* Overrides of notebook CSS for static HTML export */
-
+body {
+overflow: visible;
+padding: 8px;
+}
 
 div#notebook {
 overflow: visible;
@@ -41,6 +24,29 @@ page-break-inside: avoid;
 }
 }
 </style>
+
+<!-- Loading mathjax macro -->
+<!-- Load mathjax -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/latest.js?config=TeX-AMS_HTML"></script>
+<!-- MathJax configuration -->
+<script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+tex2jax: {
+inlineMath: [ ['$','$'], ["\\(","\\)"] ],
+displayMath: [ ['$$','$$'], ["\\[","\\]"] ],
+processEscapes: true,
+processEnvironments: true
+},
+// Center justify equations in code and markdown cells. Elsewhere
+// we use CSS to left justify single line equations in code cells.
+displayAlign: 'center',
+"HTML-CSS": {
+styles: {'.MathJax_Display': {"margin": 0}},
+linebreaks: { automatic: true }
+}
+});
+</script>
+<!-- End of mathjax configuration -->
 
 <style>
 .cell.nbinteract-left {
@@ -74,8 +80,7 @@ max-width: initial;
 .jp-OutputPrompt {
 display: none;
 }
-</style>
-
+</style></head>
 <div tabindex="-1" id="notebook" class="border-box-sizing">
 <div class="container">
 
@@ -186,21 +191,6 @@ cell border-box-sizing code_cell rendered">
 
 <div class="output_area">
 
-<div class="
-cell border-box-sizing code_cell rendered">
-<div class="input">
-
-<div class="inner_cell">
-<div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span> 
-</pre></div>
-
-
-</div>
-</div>
-</div>
-
-</div>
 
 
 
@@ -219,6 +209,21 @@ Loading widgets...
 </div>
 
 
+
+<div class="
+cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+<div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span> 
+</pre></div>
+
+</div>
+</div>
+</div>
+
+</div>
 
 
 
