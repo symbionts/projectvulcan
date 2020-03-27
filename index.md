@@ -92,7 +92,7 @@ MathJax.Hub.Config({
 
 
   
-
+<center>
   <div class="nbinteract-hide_in
       cell border-box-sizing code_cell rendered">
     <div class="input">
@@ -243,3 +243,4 @@ MathJax.Hub.Config({
 </script>
     </div>
   </div>
+</center>
