@@ -247,7 +247,7 @@ MathJax.Hub.Config({
     </div>
   </div>
 </center>
-<form
+<!--<form
   action="https://formspree.io/xjvodoja"
   method="POST"
 >
@@ -263,4 +263,4 @@ MathJax.Hub.Config({
   <!-- your other form fields go here -->
 
   <button type="submit">Send</button>
-</form>
+</form>-->
