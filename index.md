@@ -19,6 +19,7 @@ div#notebook {
   }
 }
 </style>
+<center>
 
 <!-- Loading mathjax macro -->
 <!-- Load mathjax -->
@@ -92,7 +93,7 @@ MathJax.Hub.Config({
 
 
   
-<center>
+
   <div class="nbinteract-hide_in
       cell border-box-sizing code_cell rendered">
     <div class="input">
@@ -219,7 +220,7 @@ MathJax.Hub.Config({
 </div>
 
   </div> -->
-
+</center>
 
 <!-- Loads nbinteract package -->
 <script src="https://unpkg.com/nbinteract-core" async></script>
@@ -243,4 +244,4 @@ MathJax.Hub.Config({
 </script>
     </div>
   </div>
-</center>
+
