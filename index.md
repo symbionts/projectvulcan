@@ -1,3 +1,5 @@
+# Search by 
+This is the launch site. Lot of work to start, so suggestions welcome. Right now a table of all Symbionts members has been extracted from SWD. The plan is to add fields like Post BITS journey of graduates, reviews of sponsorship programs, thesis programs, professors, etc.
 
 <style type="text/css">
 /* Overrides of notebook CSS for static HTML export */
@@ -245,3 +247,20 @@ MathJax.Hub.Config({
     </div>
   </div>
 </center>
+<form
+  action="https://formspree.io/xjvodoja"
+  method="POST"
+>
+  <label>
+    Your email:
+    <input type="text" name="_replyto">
+  </label>
+  <label>
+    Your message:
+    <textarea name="message"></textarea>
+  </label>
+
+  <!-- your other form fields go here -->
+
+  <button type="submit">Send</button>
+</form>
