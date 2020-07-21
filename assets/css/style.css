@@ -1,0 +1,41 @@
+.my-container{
+    border: 1px solid green;
+}
+.my-row{
+    border: 3px solid red;
+}
+.my-col{
+    border: 3px solid blue;
+}
+.navbar-collapse{
+ justify-content: flex-end;
+}
+
+#header{
+    background: url("../images/header.jpg") center center / cover no-repeat;
+}
+
+#blogs {
+    margin: 80px;
+}
+
+.view {
+    background: url("https://mdbootstrap.com/img/Photos/Others/img (51).jpg")no-repeat center center;
+    background-size: cover;
+}
+@media (min-width: 768px) {
+    .view {
+        overflow: visible;
+        margin-top: -56px;
+    }
+}
+.navbar {
+    z-index: 1;
+}
+
+html,
+body,
+header,
+.view {
+  height: 100%;
+}
