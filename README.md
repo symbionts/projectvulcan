@@ -1,1 +1,1 @@
-Aplha release of Symbionts website
+Alpha release of Symbionts website
