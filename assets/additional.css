@@ -9,7 +9,7 @@ body {
   font-size: 4.25rem;
   font-display: swap;
 }
-.display-1 > .mbr-iconfont {
+.display-1 > .symb-iconfont {
   font-size: 6.8rem;
 }
 .display-2 {
@@ -17,7 +17,7 @@ body {
   font-size: 3rem;
   font-display: swap;
 }
-.display-2 > .mbr-iconfont {
+.display-2 > .symb-iconfont {
   font-size: 4.8rem;
 }
 .display-4 {
@@ -25,7 +25,7 @@ body {
   font-size: 1rem;
   font-display: swap;
 }
-.display-4 > .mbr-iconfont {
+.display-4 > .symb-iconfont {
   font-size: 1.6rem;
 }
 .display-5 {
@@ -33,7 +33,7 @@ body {
   font-size: 1.5rem;
   font-display: swap;
 }
-.display-5 > .mbr-iconfont {
+.display-5 > .symb-iconfont {
   font-size: 2.4rem;
 }
 .display-7 {
@@ -41,7 +41,7 @@ body {
   font-size: 1rem;
   font-display: swap;
 }
-.display-7 > .mbr-iconfont {
+.display-7 > .symb-iconfont {
   font-size: 1.6rem;
 }
 /* ---- Fluid typography for mobile devices ---- */
@@ -488,27 +488,27 @@ a.text-black:focus {
 .alert-danger {
   background-color: #b1a374;
 }
-.mbr-section-btn a.btn:not(.btn-form) {
+.symb-section-btn a.btn:not(.btn-form) {
   border-radius: 100px;
 }
-.mbr-section-btn a.btn:not(.btn-form):hover,
-.mbr-section-btn a.btn:not(.btn-form):focus {
+.symb-section-btn a.btn:not(.btn-form):hover,
+.symb-section-btn a.btn:not(.btn-form):focus {
   box-shadow: none !important;
 }
-.mbr-section-btn a.btn:not(.btn-form):hover,
-.mbr-section-btn a.btn:not(.btn-form):focus {
+.symb-section-btn a.btn:not(.btn-form):hover,
+.symb-section-btn a.btn:not(.btn-form):focus {
   box-shadow: 0 10px 40px 0 rgba(0, 0, 0, 0.2) !important;
   -webkit-box-shadow: 0 10px 40px 0 rgba(0, 0, 0, 0.2) !important;
 }
-.mbr-gallery-filter li a {
+.symb-gallery-filter li a {
   border-radius: 100px !important;
 }
-.mbr-gallery-filter li.active .btn {
+.symb-gallery-filter li.active .btn {
   background-color: #149dcc;
   border-color: #149dcc;
   color: #ffffff;
 }
-.mbr-gallery-filter li.active .btn:focus {
+.symb-gallery-filter li.active .btn:focus {
   box-shadow: none;
 }
 .nav-tabs .nav-link {
@@ -518,24 +518,24 @@ a,
 a:hover {
   color: #149dcc;
 }
-.mbr-plan-header.bg-primary .mbr-plan-subtitle,
-.mbr-plan-header.bg-primary .mbr-plan-price-desc {
+.symb-plan-header.bg-primary .symb-plan-subtitle,
+.symb-plan-header.bg-primary .symb-plan-price-desc {
   color: #b4e6f8;
 }
-.mbr-plan-header.bg-success .mbr-plan-subtitle,
-.mbr-plan-header.bg-success .mbr-plan-price-desc {
+.symb-plan-header.bg-success .symb-plan-subtitle,
+.symb-plan-header.bg-success .symb-plan-price-desc {
   color: #ffffff;
 }
-.mbr-plan-header.bg-info .mbr-plan-subtitle,
-.mbr-plan-header.bg-info .mbr-plan-price-desc {
+.symb-plan-header.bg-info .symb-plan-subtitle,
+.symb-plan-header.bg-info .symb-plan-price-desc {
   color: #beb8b2;
 }
-.mbr-plan-header.bg-warning .mbr-plan-subtitle,
-.mbr-plan-header.bg-warning .mbr-plan-price-desc {
+.symb-plan-header.bg-warning .symb-plan-subtitle,
+.symb-plan-header.bg-warning .symb-plan-price-desc {
   color: #ced6d8;
 }
-.mbr-plan-header.bg-danger .mbr-plan-subtitle,
-.mbr-plan-header.bg-danger .mbr-plan-price-desc {
+.symb-plan-header.bg-danger .symb-plan-subtitle,
+.symb-plan-header.bg-danger .symb-plan-price-desc {
   color: #dfd9c6;
 }
 /* Scroll to top button*/
@@ -547,27 +547,27 @@ a:hover {
   font-size: 1rem;
   font-display: swap;
 }
-.form-control > .mbr-iconfont {
+.form-control > .symb-iconfont {
   font-size: 1.6rem;
 }
 blockquote {
   border-color: #149dcc;
 }
 /* Forms */
-.mbr-form .btn {
+.symb-form .btn {
   margin: .4rem 0;
 }
-.mbr-form .input-group-btn a.btn {
+.symb-form .input-group-btn a.btn {
   border-radius: 100px !important;
 }
-.mbr-form .input-group-btn a.btn:hover {
+.symb-form .input-group-btn a.btn:hover {
   box-shadow: 0 10px 40px 0 rgba(0, 0, 0, 0.2);
 }
-.mbr-form .input-group-btn button[type="submit"] {
+.symb-form .input-group-btn button[type="submit"] {
   border-radius: 100px !important;
   padding: 1rem 3rem;
 }
-.mbr-form .input-group-btn button[type="submit"]:hover {
+.symb-form .input-group-btn button[type="submit"]:hover {
   box-shadow: 0 10px 40px 0 rgba(0, 0, 0, 0.2);
 }
 .form2 .form-control {
@@ -600,17 +600,17 @@ blockquote {
   .btn {
     font-size: .75rem !important;
   }
-  .btn .mbr-iconfont {
+  .btn .symb-iconfont {
     font-size: 1rem !important;
   }
 }
 /* Footer */
-.mbr-footer-content li::before,
-.mbr-footer .mbr-contacts li::before {
+.symb-footer-content li::before,
+.symb-footer .symb-contacts li::before {
   background: #149dcc;
 }
-.mbr-footer-content li a:hover,
-.mbr-footer .mbr-contacts li a:hover {
+.symb-footer-content li a:hover,
+.symb-footer .symb-contacts li a:hover {
   color: #149dcc;
 }
 .footer3 input[type="email"],
